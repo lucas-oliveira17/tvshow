@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0
+}
+
+.navbar {
+    padding: 40px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.mobile__navbar {
+    position: fixed;
+    bottom: -2px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 12px 31px 0px rgba(0,0,0,0.75);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 78px;
+}
+
+.main__carousel {
+    overflow: scroll;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.carousel__shows {
+    display: flex;
+}
+
+.carousel__name {
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.show {
+    margin: 20px;
+}
+
+.show__image {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+.show__name {
+    display: none;
+}
+
+.logo {
+    background: url('../../assets/Logo2.png');
+    width: 190px;
+    height: 60px;
+    background-size: cover;
+}
+
+.item__logo {
+    width: 30px;
+    height: 30px;
+}
+.logo__home {
+    background: url('../../assets/home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 37px;
+}
+
+.item__name {
+    margin-top: 5px;
+}
+
+.navbar__active .item__name {
+    color: #5F5EF7
+}
+
+.navbar__active .logo__home {
+    background: url('../../assets/home-hover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo__calendar {
+    background: url('../../assets/calendar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar__active .logo__calendar {
+    background: url('../../assets/calendar-hover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
